@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Colors Word Search</title>
+    <style>
+        /* Add styling for the word search grid */
+        .word-search-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 30px);
+            grid-gap: 2px;
+            margin-bottom: 20px;
+        }
+
+        .word-search-grid div {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .word-search-grid .highlight {
+            background-color: yellow;
+        }
+
+        .clues {
+            margin-top: 20px;
+        }
+
+        .clues p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>French Colors Word Search</h1>
+
+    <div class="word-search-grid" id="wordSearchGrid"></div>
+
+    <div class="clues">
+        <h2>Clues (Find the French color names)</h2>
+        <p>1. Red (Rouge)</p>
+        <p>2. Blue (Bleu)</p>
+        <p>3. Yellow (Jaune)</p>
+        <p>4. Green (Vert)</p>
+        <p>5. Black (Noir)</p>
+    </div>
+
+    <script src="wordsearch.js"></script>
+</body>
+</html>
