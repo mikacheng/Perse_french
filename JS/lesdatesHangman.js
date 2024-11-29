@@ -1,3 +1,46 @@
+var programming_languages = [
+	"un",
+  "deux",
+  "trois",
+  "quatre",
+  "cinq",
+  "six",
+  "sept",
+  "huit",
+  "neuf",
+  "dix",
+  "onze",
+  "douze",
+  "treize",
+  "quatorze",
+  "quinze",
+  "seize",
+  "dix-sept",
+  "dix-huit",
+  "dix-neuf",
+  "vinght",
+  "janvier",
+  "fevrier",
+  "mars",
+  "avril",
+  "mai",
+  "juin",
+  "juillet",
+  "aout",
+  "septembre",
+  "octobre",
+  "novembre",
+  "décembre",
+  "lundi",
+  "mardi",
+  "mercredi",
+  "jeudi",
+  "vendredi",
+  "samedi",
+  "dimanche",
+	
+]
+
 let answer = '';
 let maxWrong = 6;
 let mistakes = 0;
@@ -5,14 +48,11 @@ let guessed = [];
 let wordStatus = null;
 
 function randomWord() {
-  let keys = Object.keys(famille);
-  let randomIndex = keys[Math.floor(Math.random() * keys.length)];
-  let hangmanWord = famille[randomIndex];
-  answer = hangmanWord.hangman;
+  answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
 }
 
 function generateButtons() {
-  let buttonsHTML = "_'-abcdefghijklmnopqrstuvwxyzéèêçà'".split('').map(letter =>
+  let buttonsHTML = "_'-abcdefghijklmnopqrstuvwxyzéèêëçàáâ".split('').map(letter =>
     `
       <button
         class="btn btn-lg btn-primary m-2"
@@ -60,10 +100,8 @@ function checkIfGameLost() {
 
 function guessedWord() {
   wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " * ")).join('');
-  
 
   document.getElementById('wordSpotlight').innerHTML = wordStatus;
- 
 }
 
 function updateMistakes() {
@@ -73,14 +111,12 @@ function updateMistakes() {
 function reset() {
   mistakes = 0;
   guessed = [];
-  wordStatus = null;
   document.getElementById('hangmanPic').src = '../images/0.png';
 
   randomWord();
   guessedWord();
   updateMistakes();
   generateButtons();
-  handleGuess("_");
 }
 
 document.getElementById('maxWrong').innerHTML = maxWrong;
@@ -88,4 +124,3 @@ document.getElementById('maxWrong').innerHTML = maxWrong;
 randomWord();
 generateButtons();
 guessedWord();
-handleGuess("_");

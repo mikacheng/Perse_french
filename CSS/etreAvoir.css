@@ -1,0 +1,79 @@
+/* The navigation menu */
+/*  
+/* The tables */
+body {
+  background-color: rgb(240, 225, 140);
+  margin: 0 10% 0 10%;
+}
+
+.maison-parent {
+  border: 1px solid black;
+  margin: 0.1rem;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+.maison-child {
+  display: inline-block;
+  /* border: 1px solid red; */
+  padding: 0.5rem 0rem;
+  vertical-align: middle;
+}
+
+table {
+  margin: 0 0% 0 0%;
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+  border-collapse: collapse;
+  width: 800px;
+  background-color: #f1f1f1;
+  padding: 5px;
+  border-spacing: 3px;
+}
+
+td, th {
+  border: 5px solid lightblue;
+  text-align: left;
+  padding: 8px;
+}
+.return {
+  margin-top: 3rem;
+}
+#lessons-text {
+  text-decoration: none;
+  margin-left: 10px;
+  
+}
+
+.french-name {
+  color: #e5640f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.french-name:hover {
+  color: blue;
+}
+
+/* #title-name {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #3510a4;
+} */
+
+h3 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: #3510a4;
+}
+h2 {
+  text-align: left;
+}
+  
+

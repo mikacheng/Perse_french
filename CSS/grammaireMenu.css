@@ -1,0 +1,50 @@
+
+#page {
+	width: 100%;
+	min-width: 800px;
+	margin: 0;
+	padding: 0;
+	font-family: "Chalkboard", "Comic Sans MS", "ChalkboardSE-Bold", sans-serif;
+	font-size: 1em;
+}
+
+#content_holder {
+	min-height: 1200px;
+	
+	position: absolute;
+	top: 76px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	
+	z-index: -1;
+	background-color: #FFE500;
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+  background-image: url(../images/content_gradient.png);
+	background-repeat: repeat-x;
+}
+
+#content {
+	margin: 0 auto;
+	padding: 75px 10px 50px 10px;
+	min-width: 600px;
+	max-width: 1024px;
+	min-height: 500px;
+  background: url(../images/backgroundPicture.png);
+	background-repeat: no-repeat;
+}
+
+#page {
+  width: 100%;
+  min-width: 800px;
+  margin: 0;
+  padding: 0;
+  font-family: "Chalkboard", "Comic Sans MS", "ChalkboardSE-Bold", sans-serif;
+  font-size: 1em;
+}
+div {
+  display: block;
+}
+

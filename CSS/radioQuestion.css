@@ -1,0 +1,19 @@
+html {
+  /* background-color: slategray; */
+  font-family: 'Century Gothic';
+  font-size: 30px;
+}
+
+body {
+  display: grid;
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  margin: 10px;
+}
+
+.form {
+  justify-self: center;
+}

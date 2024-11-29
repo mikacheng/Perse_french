@@ -1,0 +1,31 @@
+body {
+  padding: 40px;
+}
+h2 {
+  margin-bottom: 50px;
+}
+#jumbleWordsWrapper span {
+  background: wheat;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 15px 25px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#orderedWorldsWrapper span {
+  background: lightblue;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 15px 25px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+}
