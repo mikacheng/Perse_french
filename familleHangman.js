@@ -42,7 +42,7 @@ function handleGuess(chosenLetter) {
 }
 
 function updateHangmanPicture() {
-  document.getElementById('hangmanPic').src = '../images/' + mistakes + '.png';
+  document.getElementById('hangmanPic').src = 'mistakes + '.png;
 }
 
 function checkIfGameWon() {
